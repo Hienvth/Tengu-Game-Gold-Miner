@@ -21,13 +21,13 @@ public class NextLevelController : MonoBehaviour {
         {
             //Application.LoadLevel("NghiaDemo");
             int level = CGameManager.instance.levelCurrent;
-            if(level <= 10)
+            if(level <= 9)
             {
                 Application.LoadLevel("Level" + level);
             }
             else
             {
-                int ran = Random.RandomRange(1, 10);
+                int ran = Random.RandomRange(2, 9);
                 Application.LoadLevel("Level" + ran);
 
             }

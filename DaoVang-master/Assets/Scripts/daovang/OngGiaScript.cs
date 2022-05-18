@@ -57,6 +57,16 @@ public class OngGiaScript : MonoBehaviour {
         yield return new WaitForSeconds(0.7f);
         anim.SetBool("DropBomb", false);
     }
+    public void Attack()
+    {
+        anim.SetBool("Attack", true);
+        StartCoroutine(StopAttack());
+    }
+    IEnumerator StopAttack()
+    {
+        yield return new WaitForSeconds(1.5f);
+        anim.SetBool("Attack", false);
+    }
 
     public void Happy()
     {

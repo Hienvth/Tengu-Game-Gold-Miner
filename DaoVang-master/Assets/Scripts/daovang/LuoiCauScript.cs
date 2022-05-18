@@ -157,6 +157,7 @@ public class LuoiCauScript : MonoBehaviour
 			                       transform.position.y - target.position.y);
 			velocity.Normalize();
 			speed = speedBegin;
+			OngGiaScript.instance.Attack();
 		}
 	}
 	//kiem tra khi luoi cau ra ngoai tam nhin cua camera
